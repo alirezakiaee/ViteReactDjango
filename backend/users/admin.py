@@ -9,7 +9,7 @@ class UserAdmin(BaseUserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = User
-    list_display = ['email', 'first_name', 'last_name', 'is_staff']
+    list_display = ['email', 'first_name', 'last_name', 'is_staff', 'is_active', 'is_superuser']
     list_display_links = ['email', 'first_name', 'last_name']
     list_filter = ('email', 'first_name', 'last_name', 'is_staff', 'is_superuser', 'is_active')
     fieldsets = (
